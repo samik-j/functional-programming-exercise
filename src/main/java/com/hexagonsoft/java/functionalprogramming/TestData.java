@@ -46,7 +46,7 @@ public class TestData {
             ),
             customer(reka, Budapest,
                 order(false, idea),
-                order(false, idea),
+                order(false, youTrack),
                 order(idea)
             ),
             customer(bajram, Ankara,

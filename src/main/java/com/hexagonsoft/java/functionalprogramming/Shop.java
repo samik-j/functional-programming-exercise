@@ -12,4 +12,11 @@ public class Shop {
         this.customers = customers;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public List<Customer> getCustomers() {
+        return customers;
+    }
 }

@@ -14,4 +14,33 @@ public class Customer {
         this.orders = orders;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    void printOrders() {
+        orders.stream()
+                .forEach(order -> printOrder(order));
+    }
+
+    private void printOrder(Order order) {
+        System.out.println(order);
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", city=" + city +
+                ", orders=" + orders +
+                '}';
+    }
 }

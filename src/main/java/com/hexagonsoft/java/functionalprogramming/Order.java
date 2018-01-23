@@ -12,4 +12,19 @@ public class Order {
         this.delivered = delivered;
     }
 
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public boolean isDelivered() {
+        return delivered;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "products=" + products +
+                ", delivered=" + delivered +
+                '}';
+    }
 }
